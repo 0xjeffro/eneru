@@ -1,0 +1,148 @@
+.rootSidenavTab {
+  align-items: flex-start;
+  background: var(--semi-color-bg-0);
+  flex-direction: column;
+  height: 1042px;
+  overflow: hidden;
+  row-gap: 0;
+  width: 1440px;
+  display: flex;
+  color: var(--semi-color-text-0);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  line-height: 28px;
+  text-align: left;
+
+  .nav {
+    align-self: stretch;
+    height: 60px;
+
+    .navigationHeaderLogo {
+      align-items: flex-start;
+      column-gap: 0;
+      display: inline-flex;
+      flex-shrink: 0;
+
+      .semiIconsSemiLogo {
+        font-size: 36px;
+        color: var(--semi-color-text-0);
+      }
+    }
+
+    .dIV {
+      align-items: center;
+      column-gap: 16px;
+      display: inline-flex;
+      flex-shrink: 0;
+
+      .semiIconsFeishuLogo,
+      .semiIconsHelpCircle,
+      .semiIconsBell {
+        font-size: 20px;
+        color: var(--semi-color-text-2);
+      }
+
+      .avatar {
+        height: 32px;
+        width: 32px;
+      }
+    }
+  }
+
+  .main {
+    align-items: flex-start;
+    column-gap: 0;
+    display: flex;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    .left {
+      height: 982px;
+
+      .navItem,
+      .navItem5 {
+        width: 223px;
+
+        .iconIntro,
+        .iconRadio {
+          height: 20px;
+          position: relative;
+          width: 20px;
+        }
+      }
+
+      .navItem1,
+      .navItem2,
+      .navItem3,
+      .navItem4,
+      .navItem6,
+      .navItem7 {
+        width: 223px;
+
+        .iconHeart,
+        .iconCalendar,
+        .iconCheckbox,
+        .iconCalendar,
+        .iconList,
+        .iconToast {
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+
+    .mainRight {
+      align-items: flex-start;
+      display: flex;
+      flex-basis: 0;
+      flex-direction: column;
+      padding: 30px 50px 0px 30px;
+      row-gap: 10px;
+      flex-grow: 1;
+
+      .item {
+        min-width: 90px;
+        vertical-align: middle;
+        flex-shrink: 0;
+      }
+
+      .content {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        row-gap: 0;
+        align-self: stretch;
+        color: var(--semi-color-disabled-text);
+        font-size: 14px;
+        letter-spacing: -0.14px;
+        line-height: 20px;
+
+        .tabs {
+          align-self: stretch;
+        }
+
+        .yourContent {
+          align-items: flex-start;
+          background: var(--semi-color-fill-0);
+          border-radius: 12px;
+          column-gap: 10px;
+          display: flex;
+          height: 20px;
+          overflow: hidden;
+          padding: 220px 499px;
+          width: 123px;
+          flex-shrink: 0;
+
+          .yourContentHere {
+            min-width: 123px;
+            vertical-align: middle;
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+}
