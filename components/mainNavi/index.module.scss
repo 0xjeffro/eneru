@@ -1,0 +1,151 @@
+.rootDualSideNav {
+  align-items: flex-start;
+  background: var(--semi-color-bg-0);
+  column-gap: 0;
+  height: 100vh;
+  overflow: hidden;
+  // width: 1440px;
+  display: flex;
+  color: var(--semi-color-text-0);
+  font-family: Inter, serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  line-height: 28px;
+  text-align: left;
+
+  .navVerticalCollapse {
+    align-self: stretch;
+
+    .navItem {
+      width: 43px;
+
+      .iconIntro {
+        height: 20px;
+        position: relative;
+        width: 20px;
+      }
+    }
+
+    .navItem1,
+    .navItem2,
+    .navItem3 {
+      width: 43px;
+
+      .iconConfig,
+      .iconCheckbox,
+      .iconToast,
+      .iconCalendar {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
+    .navigationHeaderLogo {
+      align-items: flex-start;
+      background: #00000000;
+      column-gap: 0;
+      display: flex;
+      flex-basis: 0;
+      flex-grow: 1;
+
+      .semiIconsSemiLogo {
+        font-size: 36px;
+        color: var(--semi-color-text-0);
+      }
+    }
+  }
+
+  .main {
+    align-items: flex-start;
+    column-gap: 0;
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    align-self: stretch;
+
+    .nav {
+      align-self: stretch;
+
+      .navItem,
+      .navItem1,
+      .navItem2,
+      .navItem3,
+      .navItem4,
+      .navItem5,
+      .navItem6,
+      .navItem7 {
+        width: 223px;
+
+        .semiIconsHelpCircle,
+        .semiIconsAscend,
+        .semiIconsCopyAdd,
+        .semiIconsHistory,
+        .semiIconsMinimize,
+        .semiIconsMenu,
+        .semiIconsQuit,
+        .semiIconsSync {
+          font-size: 20px;
+          color: rgb(var(--semi-grey-3));
+        }
+      }
+    }
+
+    & > .content {
+      align-items: flex-start;
+      display: flex;
+      flex-basis: 0;
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 30px 0px 0px 30px;
+      row-gap: 10px;
+      align-self: stretch;
+
+      .content {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        // width: 1096px;
+        flex-shrink: 0;
+
+        .item {
+          min-width: 90px;
+          vertical-align: middle;
+          flex-shrink: 0;
+        }
+
+        .frame1321317609 {
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          row-gap: 0;
+          align-self: stretch;
+          color: var(--semi-color-disabled-text);
+          font-size: 14px;
+          letter-spacing: -0.14px;
+          line-height: 20px;
+
+          .frame1321317607 {
+            align-items: center;
+            background: var(--semi-color-fill-0);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: row;
+            flex-shrink: 0;
+            height: 20px;
+            overflow: hidden;
+            padding: 220px 469px;
+            align-self: stretch;
+
+            .yourContentHere {
+              vertical-align: middle;
+              min-width: 123px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
