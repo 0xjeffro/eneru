@@ -11,13 +11,19 @@ class content extends React.Component {
             <div className="grid" style={{width: '100%'}}>
                 <Row style={{marginTop: 38, marginLeft: 30}}>
                     <Col span={24}>
-                        <div style={{fontSize: 28, fontWeight: "bolder",
-                            fontFamily: "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"}}>
+                        <div style={{
+                            fontSize: 28, fontWeight: "bolder",
+                            fontFamily: "\"Inter\", -apple-system, BlinkMacSystemFont, " +
+                                "\"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", " +
+                                "\"Helvetica Neue\", Helvetica, Arial, sans-serif"}}>
                             Reporting
                         </div>
                     </Col>
                 </Row>
-                <Row style={{marginTop: 20, marginLeft: 30, width: '100%', fontFamily: "\"Inter\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Helvetica Neue\", Helvetica, Arial, sans-serif"}}>
+                <Row style={{marginTop: 20, marginLeft: 30, width: '100%',
+                    fontFamily: "\"Inter\", -apple-system, BlinkMacSystemFont, " +
+                        "\"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", " +
+                        "\"Helvetica Neue\", Helvetica, Arial, sans-serif"}}>
                     <Col span={22}>
                         <Tabs
                             tabPosition="top"
