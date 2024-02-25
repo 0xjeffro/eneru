@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 
 
 import {Icon, Nav} from '@douyinfe/semi-ui';
-import {IconCalendar, IconCheckbox, IconIntro, IconRating, IconToast} from '@douyinfe/semi-icons-lab';
+import {IconCalendar, IconCheckbox, IconIntro, IconRating, IconToast, IconTooltip} from '@douyinfe/semi-icons-lab';
 import {IconSemiLogo, IconSetting, IconSettingStroked, IconUserSetting} from '@douyinfe/semi-icons';
 
 import Image from 'next/image'
@@ -59,6 +59,12 @@ const Layout = () => {
                     itemKey="setting"
                     text="设置"
                     icon={<IconSetting className={styles.iconCalendar} />}
+                    className={styles.navItem3}
+                />
+                <Nav.Item
+                    itemKey="help"
+                    text="帮助文档"
+                    icon={<IconTooltip className={styles.iconCalendar} />}
                     className={styles.navItem3}
                 />
             </Nav>
