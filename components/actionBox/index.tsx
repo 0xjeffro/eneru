@@ -6,7 +6,7 @@ import React, {useState} from 'react';
 import {
     IconAlignBottom,
     IconExport,
-    IconFolder, IconImport,
+    IconFolder, IconImport, IconKanban,
     IconList, IconMaximize, IconPlus,
 } from "@douyinfe/semi-icons";
 import {IconProgress} from "@douyinfe/semi-icons-lab";
@@ -33,7 +33,7 @@ const ActionBox = () => {
                         <Dropdown.Menu style={{width: 164}}>
                             <Dropdown.Item type="secondary" icon={<IconFolder />} style={{fontWeight: "bolder", color: "var(--semi-color-text-0)"}}>分类器</Dropdown.Item>
                             <Dropdown.Divider />
-                            <Dropdown.Item type="primary" icon={<IconMaximize />} style={{fontWeight: "bolder", color: "var(--semi-color-text-0)"}}>项目</Dropdown.Item>
+                            <Dropdown.Item type="primary" icon={<IconKanban />} style={{fontWeight: "bolder", color: "var(--semi-color-text-0)"}}>项目</Dropdown.Item>
                         </Dropdown.Menu>
                     }
                 >
