@@ -6,6 +6,7 @@ import React, {useEffect, useState} from "react";
 
 import Content from '@/components/content'
 import ActionBox from "@/components/actionBox";
+import {IconKanban, IconRadio} from "@douyinfe/semi-icons";
 
 const SubNavi = () => {
     const [windowHeight, setHeight] = useState(0);
@@ -28,17 +29,26 @@ const SubNavi = () => {
             icon: <IconTabs />,
             itemKey: 'AI',
             items: [
-                {text:'TAO', itemKey: 'TAO'},
-                {text:'WLD', itemKey: 'WLD'},
-                {text:'EnqAI', itemKey: 'EnqAI'},
+                {text:'TAO', itemKey: 'TAO', icon: <IconRadio style={{marginLeft: 10}}/>},
+                {text:'WLD', itemKey: 'WLD', icon: <IconRadio style={{marginLeft: 10}}/>},
+                {text:'EnqAI', itemKey: 'EnqAI', icon: <IconRadio style={{marginLeft: 10}}/>},
             ],
         },
         {
             text: '以太坊L2',
             icon: <IconTabs />,
             itemKey: 'L2',
-            items: ['Op', 'ZKS', 'ARB'],
+            items: [
+                {text:'ZKS', itemKey: 'ZKS', icon: <IconRadio style={{marginLeft: 10}}/>},
+                {text:'ARB', itemKey: 'ARB', icon: <IconRadio style={{marginLeft: 10}}/>},
+            ],
         },
+        {
+            text: 'RSS 订阅',
+            icon: <IconKanban style={{marginLeft: 0}}/>,
+            itemKey: 'L3',
+            style: {fontWeight: 'lighter'},
+        }
     ]
 
     return (
