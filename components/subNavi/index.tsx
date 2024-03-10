@@ -1,5 +1,4 @@
 import styles from "@/components/mainNavi/index.module.scss";
-import {Nav, NavItem} from "@douyinfe/semi-ui";
 
 import { IconTabs } from "@douyinfe/semi-icons-lab";
 import React, {useEffect, useState} from "react";
@@ -7,6 +6,8 @@ import React, {useEffect, useState} from "react";
 import Content from '@/components/content'
 import ActionBox from "@/components/actionBox";
 import {IconKanban, IconRadio} from "@douyinfe/semi-icons";
+import { Tree } from '@douyinfe/semi-ui';
+import DraggableSubNav from "@/components/draggableSubNav";
 
 const SubNavi = () => {
     const [windowHeight, setHeight] = useState(0);
@@ -55,18 +56,10 @@ const SubNavi = () => {
         <div className={styles.main}>
             <div>
                 <div style={{height: 20, backgroundColor: "var(--semi-color-nav-bg)"}}></div>
-                <Nav
-                    defaultOpenKeys={["user", "union"]}
-                    bodyStyle={{"height": windowHeight - 130}}
-                    mode="vertical"
-                    className={styles.nav}
-                    items={items}
-                    style={{marginTop: 0, paddingBottom: 20, borderRight: "0px"}}
-                >
-                    {/*Placeholder element*/}
-                    <div style={{height: 30, backgroundColor: ""}}></div>
+                <div style={{"height": windowHeight - 98, backgroundColor: "var(--semi-color-nav-bg)"}}>
+                    <DraggableSubNav></DraggableSubNav>
+                </div>
 
-                </Nav>
                 <div style={{
                     height: 52,
                     backgroundColor: "var(--semi-color-nav-bg)"
