@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Tree } from '@douyinfe/semi-ui';
 import {
-    IconRadio, IconChevronDown
+    IconRadio, IconChevronDown, IconDelete, IconClose, IconItalic
 } from '@douyinfe/semi-icons';
 import {IconTabs} from "@douyinfe/semi-icons-lab";
+import { Dropdown, Tag, Input, Button } from '@douyinfe/semi-ui';
 
 const DraggableTree = () => {
     const defaultTreeData = [
@@ -144,6 +145,7 @@ const DraggableTree = () => {
             rightIcon = <span style={{marginRight: '14px', color: 'var(--semi-color-text-2)', fontWeight: 'lighter', fontSize: 'smaller'}}>{n_children}</span>
         }
         return (
+
             <li
                 className={className}
                 style={{height: '36px', borderRadius: '4px',
@@ -153,8 +155,20 @@ const DraggableTree = () => {
                     onExpand(data);
                 }}
             >
+
                 {isLeaf ? <IconRadio style={{color: 'var(--semi-color-text-2)'}}/> : <IconTabs size="large"/>}
+                <Dropdown
+                    trigger={'contextMenu'}
+                    position={'bottomRight'}
+                    render={
+                        <Dropdown.Menu>
+                            <Dropdown.Item type="primary" icon={<IconItalic/>}>编辑</Dropdown.Item>
+                            <Dropdown.Item type="danger" icon={<IconClose/>}>删除</Dropdown.Item>
+                        </Dropdown.Menu>
+                    }
+                >
                 <span style={{marginLeft: '12px', fontSize: '14px', width: '150px'}}> {label}</span>
+                </Dropdown>
                 {rightIcon}
                 {isLeaf || n_children === 0 ? null : expandIcon}
             </li>
