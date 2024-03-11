@@ -68,7 +68,8 @@ const SubNavi = () => {
                 </div>
                 <div style={{height: 26, backgroundColor: "var(--semi-color-nav-bg)"}}></div>
             </div>
-            <Content></Content>
+            <Content>
+            </Content>
         </div>
     )
 }

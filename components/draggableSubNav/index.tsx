@@ -6,7 +6,7 @@ import {
 import {IconTabs} from "@douyinfe/semi-icons-lab";
 import { Dropdown, Tag, Input, Button } from '@douyinfe/semi-ui';
 
-const DraggableTree = () => {
+const DraggableSubNav = () => {
     const defaultTreeData = [
         {
             label: '模块',
@@ -199,5 +199,5 @@ const DraggableTree = () => {
     />;
 };
 
-export default DraggableTree;
+export default DraggableSubNav;
 

@@ -30,7 +30,7 @@ const ActionBox = () => {
                     showTick
                     position={'top'}
                     render={
-                        <Dropdown.Menu style={{width: 164}}>
+                        <Dropdown.Menu style={{width: 158}}>
                             <Dropdown.Item type="secondary" icon={<IconFolder />} style={{fontWeight: "bolder", color: "var(--semi-color-text-0)"}}>分类器</Dropdown.Item>
                             <Dropdown.Divider />
                             <Dropdown.Item type="primary" icon={<IconKanban />} style={{fontWeight: "bolder", color: "var(--semi-color-text-0)"}}>项目</Dropdown.Item>
